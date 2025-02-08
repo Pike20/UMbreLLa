@@ -16,5 +16,5 @@ RUN ./install.sh
 # Make port 80 available to the world outside this container
 EXPOSE 65432
 
-# Run bash so the container stays alive
-CMD ["bash"]
+# Run an infinite loop to keep the container alive
+CMD ["tail", "-f", "/dev/null"]

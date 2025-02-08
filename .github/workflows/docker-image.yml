@@ -33,7 +33,7 @@ jobs:
       matrix:
         config:
           # Multi-stage build
-          - { tag: "cuda", dockerfile: ".Dockerfile", platforms: "linux/amd64", full: true, light: true, server: true, freediskspace: false}
+          - { tag: "cuda", dockerfile: "Dockerfile", platforms: "linux/amd64", full: true, light: true, server: true, freediskspace: false}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
